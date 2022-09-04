@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fonts */
+    --ff-kumbh-sans: 'Kumbh Sans',
+        sans-serif;
+
+    /* Font Styles */
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    /* Font Sizes */
+    --fs-h2: 18px;
+    --fs-body: 14px;
+    --fs-sm: 10px;
+
+    /* Colours */
+
+    --clr-dark-cyan: hsl(185, 75%, 39%);
+    --clr-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --clr-dark-grayish-blue: hsl(227, 10%, 46%);
+    --clr-dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-color: var(--clr-dark-cyan);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 48vw bottom 50vh, left 45vw top 50vh;
+    color: var(--clr-dark-grayish-blue);
+    font-family: var(--ff-kumbh-sans);
+    font-size: var(--fs-body);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.profile-card {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-container {
+    max-width: 350px;
+    max-height: 380px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.info img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: -46px;
+}
+
+.info span {
+    font-weight: var(--fw-bold);
+    margin-bottom: 5px;
+    color: var(--clr-very-dark-desaturated-blue);
+}
+
+.profile-name {
+    color: var(--clr-dark-grayish-blue);
+    font-size: var(--fs-h2);
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid hsla(228, 9%, 92%, 1);
+    padding: 10px 59px;
+}
+
+.stats + .stats {
+    margin-right: 0.5em;
+}
+
+.stats-container .number-stat {
+    color: var(--clr-very-dark-desaturated-blue);
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2px;
+}
+
+.text-stat {
+    letter-spacing: 1.5px;
+    font-size: var(--fs-sm);
+}
+
+.author {
+    font-size: var(--fs-body);
+    color: var(--clr-very-dark-desaturated-blue);
+    text-align: center;
+    margin: 20px;
+
+}
+
+.author a {
+    color: rgb(24, 42, 112);
+}
